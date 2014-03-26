@@ -34,11 +34,11 @@ end
 
 
 # Person 3
-def my_array_sorting_method(source, thing_to_locate)
+def my_array_sorting_method(source, thing_to_sort)
   # Your code here!
 end
 
-def my_hash_sorting_method(source, thing_to_locate)
+def my_hash_sorting_method(source, thing_to_sort)
   # Your code here!
 end
 
