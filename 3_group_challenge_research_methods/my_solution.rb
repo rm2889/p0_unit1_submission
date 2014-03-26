@@ -34,7 +34,7 @@ end
 
 
 # Person 3
-def my_array_sorting_method(source, thing_to_sort)
+def my_array_sorting_method(source)
   # Your code here!
 end
 
