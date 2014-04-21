@@ -7,15 +7,50 @@ my_family_pets_ages = {"Evi" => 6, "Hoobie" => 3, "George" => 12, "Bogart" => 4,
 # Person 1's solution
 def my_array_finding_method(source, thing_to_find)
   # Your code here!
+=begin
+   pseudo code:
+   	return_array = []
+   	FOREACH array_item in thing_to_find
+   		IF array_item.inlcude?(thing_to_find)
+   			return_array.push(thing_to_find)
+		END IF
+	END FOR
+	return return_array  
+  # 
+=end
+
+	return_array = []
+	source.each { |x|
+		if x.to_s.include?(thing_to_find.to_s)
+			return_array.push(x)
+		end
+	}
+	return return_array
 end
 
 def my_hash_finding_method(source, thing_to_find)
   # Your code here!
+=begin
+pseudocode:
+	return_array=[]
+	souce.each {|key|, value|
+		IF value == thing_to_find
+			return_array.push(value)
+		ENDIF
+	}
+=end
+	return_array = []
+	source.each {|key, value|
+		if value == thing_to_find
+			return_array.push(key)
+		end
+	}
+	return return_array
 end
 
 # Identify and describe the ruby method you implemented. 
-# 
-#
+# array.include? in the first function - it checks to see if the parameter is included in the array calling the method
+# array.push which adds a new item to the end of the array
 #
 
 # Person 2
